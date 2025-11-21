@@ -1,0 +1,45 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Light & Dark Theme Variables */
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --primary: #0066ff;
+  --card-bg: #f7f7f7;
+}
+
+:root.dark {
+  --bg: #0f0f0f;
+  --text: #ffffff;
+  --primary: #5da8ff;
+  --card-bg: #1a1a1a;
+}
+
+/* Sections */
+.section {
+  padding: 80px 5%;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
